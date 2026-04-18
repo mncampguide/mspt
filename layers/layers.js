@@ -126,25 +126,10 @@ var lyr_trail_segmentscopy_8 = new ol.layer.Vector({
                 source:jsonSource_trail_segmentscopy_8, 
                 style: style_trail_segmentscopy_8,
                 popuplayertitle: 'trail_segments copy',
-                interactive: false,
+                interactive: true,
     title: 'trail_segments copy<br />\
     <img src="styles/legend/trail_segmentscopy_8_0.png" /> Paved.<br />\
     <img src="styles/legend/trail_segmentscopy_8_1.png" /> Unpaved.<br />' });
-var format_trail_segments_hit_9 = new ol.format.GeoJSON();
-var features_trail_segments_hit_9 = format_trail_segments_hit_9.readFeatures(json_trail_segments_hit_9, 
-            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_trail_segments_hit_9 = new ol.source.Vector({
-    attributions: ' ',
-});
-jsonSource_trail_segments_hit_9.addFeatures(features_trail_segments_hit_9);
-var lyr_trail_segments_hit_9 = new ol.layer.Vector({
-                declutter: false,
-                source:jsonSource_trail_segments_hit_9, 
-                style: style_trail_segments_hit_9,
-                popuplayertitle: 'trail_segments_hit',
-                interactive: true,
-                title: '<img src="styles/legend/trail_segments_hit_9.png" /> trail_segments_hit'
-            });
 var group_NortheastTrailSegments = new ol.layer.Group({
                                 layers: [],
                                 fold: 'close',
@@ -170,8 +155,8 @@ var group_TrailObservations = new ol.layer.Group({
                                 fold: 'open',
                                 title: 'Trail Observations'});
 
-lyr_Terrain_0.setVisible(true);lyr_GoogleSatelliite_1.setVisible(true);lyr_S23__2.setVisible(true);lyr_railroadwalk_3.setVisible(true);lyr_lilydale_claypit_fence_4.setVisible(true);lyr_Trail_Obstacles_5.setVisible(true);lyr_Pickerel_Lake_Approach_6.setVisible(true);lyr_S27x_7.setVisible(true);lyr_trail_segmentscopy_8.setVisible(true);lyr_trail_segments_hit_9.setVisible(true);
-var layersList = [lyr_Terrain_0,lyr_GoogleSatelliite_1,group_UndevelopedObstacles,lyr_trail_segmentscopy_8,lyr_trail_segments_hit_9];
+lyr_Terrain_0.setVisible(true);lyr_GoogleSatelliite_1.setVisible(true);lyr_S23__2.setVisible(true);lyr_railroadwalk_3.setVisible(true);lyr_lilydale_claypit_fence_4.setVisible(true);lyr_Trail_Obstacles_5.setVisible(true);lyr_Pickerel_Lake_Approach_6.setVisible(true);lyr_S27x_7.setVisible(true);lyr_trail_segmentscopy_8.setVisible(true);
+var layersList = [lyr_Terrain_0,lyr_GoogleSatelliite_1,group_UndevelopedObstacles,lyr_trail_segmentscopy_8];
 lyr_S23__2.set('fieldAliases', {'fid': 'fid', 'Feature': 'Feature', 'Notes': 'Notes', });
 lyr_railroadwalk_3.set('fieldAliases', {'fid': 'fid', 'Feature': 'Feature', 'Description': 'Description', 'Notes': 'Notes', });
 lyr_lilydale_claypit_fence_4.set('fieldAliases', {'fid': 'fid', 'id': 'id', 'Feature': 'Feature', 'Notes': 'Notes', });
@@ -179,7 +164,6 @@ lyr_Trail_Obstacles_5.set('fieldAliases', {'fid': 'fid', 'Feature': 'Feature', '
 lyr_Pickerel_Lake_Approach_6.set('fieldAliases', {'fid': 'fid', 'Feature': 'Feature', 'Description': 'Description', });
 lyr_S27x_7.set('fieldAliases', {'fid': 'fid', 'SID': 'SID', });
 lyr_trail_segmentscopy_8.set('fieldAliases', {'fid': 'fid', 'SID': 'SID', 'Segment': 'Segment', 'Riverside': 'Riverside', 'Surface': 'Surface', 'Description': 'Description', 'Status': 'Status', 'Ownership': 'Ownership', 'Distance': 'Distance', 'Quality': 'Quality', 'Slope': 'Slope', 'Vegetation': 'Vegetation', 'Difficulty': 'Difficulty', 'layer': 'layer', 'path': 'path', });
-lyr_trail_segments_hit_9.set('fieldAliases', {'fid': 'fid', 'SID': 'SID', 'Segment': 'Segment', 'Riverside': 'Riverside', 'Surface': 'Surface', 'Description': 'Description', 'Status': 'Status', 'Ownership': 'Ownership', 'Distance': 'Distance', 'Quality': 'Quality', 'Slope': 'Slope', 'Vegetation': 'Vegetation', 'Difficulty': 'Difficulty', 'layer': 'layer', 'path': 'path', });
 lyr_S23__2.set('fieldImages', {'fid': '', 'Feature': '', 'Notes': '', });
 lyr_railroadwalk_3.set('fieldImages', {'fid': 'TextEdit', 'Feature': 'TextEdit', 'Description': 'TextEdit', 'Notes': 'TextEdit', });
 lyr_lilydale_claypit_fence_4.set('fieldImages', {'fid': '', 'id': '', 'Feature': '', 'Notes': '', });
@@ -187,15 +171,13 @@ lyr_Trail_Obstacles_5.set('fieldImages', {'fid': '', 'Feature': '', 'Description
 lyr_Pickerel_Lake_Approach_6.set('fieldImages', {'fid': 'TextEdit', 'Feature': 'TextEdit', 'Description': 'TextEdit', });
 lyr_S27x_7.set('fieldImages', {'fid': 'TextEdit', 'SID': 'TextEdit', });
 lyr_trail_segmentscopy_8.set('fieldImages', {'fid': 'TextEdit', 'SID': 'TextEdit', 'Segment': 'TextEdit', 'Riverside': 'TextEdit', 'Surface': 'TextEdit', 'Description': 'TextEdit', 'Status': 'TextEdit', 'Ownership': 'TextEdit', 'Distance': 'TextEdit', 'Quality': 'TextEdit', 'Slope': 'TextEdit', 'Vegetation': 'TextEdit', 'Difficulty': 'TextEdit', 'layer': 'TextEdit', 'path': 'TextEdit', });
-lyr_trail_segments_hit_9.set('fieldImages', {'fid': 'TextEdit', 'SID': 'TextEdit', 'Segment': 'TextEdit', 'Riverside': 'TextEdit', 'Surface': 'TextEdit', 'Description': 'TextEdit', 'Status': 'TextEdit', 'Ownership': 'TextEdit', 'Distance': 'TextEdit', 'Quality': 'TextEdit', 'Slope': 'TextEdit', 'Vegetation': 'TextEdit', 'Difficulty': 'TextEdit', 'layer': 'TextEdit', 'path': 'TextEdit', });
 lyr_S23__2.set('fieldLabels', {'fid': 'no label', 'Feature': 'inline label - visible with data', 'Notes': 'inline label - visible with data', });
 lyr_railroadwalk_3.set('fieldLabels', {'fid': 'no label', 'Feature': 'inline label - visible with data', 'Description': 'inline label - visible with data', 'Notes': 'inline label - visible with data', });
 lyr_lilydale_claypit_fence_4.set('fieldLabels', {'fid': 'no label', 'id': 'inline label - visible with data', 'Feature': 'inline label - visible with data', 'Notes': 'inline label - visible with data', });
 lyr_Trail_Obstacles_5.set('fieldLabels', {'fid': 'no label', 'Feature': 'inline label - visible with data', 'Description': 'inline label - visible with data', 'Alternative': 'inline label - visible with data', });
 lyr_Pickerel_Lake_Approach_6.set('fieldLabels', {'fid': 'no label', 'Feature': 'inline label - visible with data', 'Description': 'inline label - visible with data', });
 lyr_S27x_7.set('fieldLabels', {'fid': 'no label', 'SID': 'no label', });
-lyr_trail_segmentscopy_8.set('fieldLabels', {'fid': 'hidden field', 'SID': 'hidden field', 'Segment': 'hidden field', 'Riverside': 'hidden field', 'Surface': 'hidden field', 'Description': 'hidden field', 'Status': 'hidden field', 'Ownership': 'hidden field', 'Distance': 'hidden field', 'Quality': 'hidden field', 'Slope': 'hidden field', 'Vegetation': 'hidden field', 'Difficulty': 'hidden field', 'layer': 'hidden field', 'path': 'hidden field', });
-lyr_trail_segments_hit_9.set('fieldLabels', {'fid': 'hidden field', 'SID': 'hidden field', 'Segment': 'inline label - visible with data', 'Riverside': 'inline label - visible with data', 'Surface': 'inline label - visible with data', 'Description': 'inline label - visible with data', 'Status': 'inline label - visible with data', 'Ownership': 'inline label - visible with data', 'Distance': 'inline label - visible with data', 'Quality': 'inline label - visible with data', 'Slope': 'inline label - visible with data', 'Vegetation': 'inline label - visible with data', 'Difficulty': 'inline label - visible with data', 'layer': 'hidden field', 'path': 'hidden field', });
-lyr_trail_segments_hit_9.on('precompose', function(evt) {
+lyr_trail_segmentscopy_8.set('fieldLabels', {'fid': 'hidden field', 'SID': 'hidden field', 'Segment': 'header label - visible with data', 'Riverside': 'header label - visible with data', 'Surface': 'header label - visible with data', 'Description': 'header label - visible with data', 'Status': 'header label - visible with data', 'Ownership': 'header label - visible with data', 'Distance': 'header label - visible with data', 'Quality': 'header label - visible with data', 'Slope': 'header label - visible with data', 'Vegetation': 'header label - visible with data', 'Difficulty': 'header label - visible with data', 'layer': 'hidden field', 'path': 'hidden field', });
+lyr_trail_segmentscopy_8.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });

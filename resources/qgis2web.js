@@ -349,7 +349,11 @@ function onSingleClickFeatures(evt) {
                 }
             }
         }
-    });
+    },
+  {
+        hitTolerance: 12
+    }
+);
     if (popupText === '<ul>') {
         popupText = '';
     } else {
